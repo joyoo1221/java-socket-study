@@ -53,8 +53,11 @@ Content-Length: 22                 ← 헤더 (본문 크기)
 4. 결과 확인
 
 ### 4. 실행 화면
-![/hello](/02-http-server/images/hello.png)
-![/time](/02-http-server/images/time.png)
+#### 4.1. /hello 경로 접속
+![/hello](/02-http-server/images/hello.png)</br>
+#### 4.2. /time 경로 접속
+![/time](/02-http-server/images/time.png)</br>
+#### 4.2. 그 외 경로 접속
 ![그 외](/02-http-server/images/etc.png)
 
 ### 5. 어떤 문제를 만났고 어떻게 해결했는가?
