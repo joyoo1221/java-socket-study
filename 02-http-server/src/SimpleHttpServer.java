@@ -36,10 +36,12 @@ public class SimpleHttpServer {
             if ("/hello".equals(path)) {
                 body = "<h1>Hello, World!</h1>";
             } else if ("/time".equals(path)) {
-                body = "<h1>현재 시간: " + java.time.LocalDateTime.now() + "</h1>";
+                body = "<h1>현재 시간: "
+                        + java.time.LocalDateTime.now().format(java.time.format.DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"))
+                        + "</h1>";
             } else {
-                body = "<h1>Java Socket HTTP Server</h1>" +
-                        "<p>사용 가능한 경로: /hello, /time</p>";
+                body = "<h1>Java Socket HTTP Server</h1>"
+                        + "<p>사용 가능한 경로: /hello, /time</p>";
             }
 
             // 6. HTTP 응답 메시지 작성 - HTTP 규격에 맞는 형식으로 응답

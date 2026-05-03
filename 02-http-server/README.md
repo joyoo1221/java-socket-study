@@ -53,7 +53,9 @@ Content-Length: 22                 ← 헤더 (본문 크기)
 4. 결과 확인
 
 ### 4. 실행 화면
-
+![/hello](/02-http-server/images/hello.png)
+![/time](/02-http-server/images/time.png)
+![그 외](/02-http-server/images/etc.png)
 
 ### 5. 어떤 문제를 만났고 어떻게 해결했는가?
 
