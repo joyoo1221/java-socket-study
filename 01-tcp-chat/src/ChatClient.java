@@ -12,8 +12,8 @@ public class ChatClient {
 
         // 2. 입력 스트림 - 서버가 보낸 데이터를 읽기 위한 통로
         // 서버와 동일한 구조: InputStream -> InputStreamReader -> BufferedReader
-        BufferedReader in new BufferedReader(
-                new InputStreamsReader(socket.getInputStream())
+        BufferedReader in = new BufferedReader(
+                new InputStreamReader(socket.getInputStream())
         );
 
         // 출력 스트림 - 서버에게 데이터를 보내기 위한 통로
