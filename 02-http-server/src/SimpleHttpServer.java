@@ -9,7 +9,7 @@ public class SimpleHttpServer {
     public static void main(String[] args) throws IOException {
         // 1. 서버 소켓 생성 - 8080 포트에서 HTTP 요청을 대기
         ServerSocket serverSocket = new ServerSocket(8080);
-        System.out.println("HTTP 서버 시작");
+        System.out.println("HTTP 서버 시작: http://localhost:8080");
 
         // 2. 클라이언트 요청을 반복적으로 처리 (while문으로 여러 요청 수신)
         while (true) {
