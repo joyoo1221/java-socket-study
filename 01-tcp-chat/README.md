@@ -63,20 +63,20 @@ sequenceDiagram
 
 ### 4. 실행 화면
 #### 4.1. 실행 시 콘솔
-- ChatServer 접속 시
+- ChatServer 접속 시</br>
 ![](/01-tcp-chat/images/chatServer01.png)</br>
-- ChatClient 접속 시
+- ChatClient 접속 시</br>
 ![](/01-tcp-chat/images/chatClient01.png)</br>
-- 클라이언트가 접속 했을 때 서버 측 콘솔
+- 클라이언트가 접속 했을 때 서버 측 콘솔</br>
 ![](/01-tcp-chat/images/chatServer02.png)</br>
 #### 4.2. 채팅 시 콘솔
-- 서버측 채팅 시작
+- 서버측 채팅 시작</br>
 ![](/01-tcp-chat/images/chatServer03.png)</br>
-- 클라이언트 채팅 수신
+- 클라이언트 채팅 수신</br>
 ![](/01-tcp-chat/images/chatClient02.png)</br>
-- 클라이언트 답변
+- 클라이언트 답변</br>
 ![](/01-tcp-chat/images/chatClient03.png)</br>
-- 서버측 채팅 수신
+- 서버측 채팅 수신</br>
 ![](/01-tcp-chat/images/chatServer04.png)
 
 
