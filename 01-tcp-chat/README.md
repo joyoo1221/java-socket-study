@@ -20,6 +20,29 @@ TCP Socket으로 서버-클라이언트 간 양방향 실시간 메시지 통신
 #### 2.2. 메시지 송수신 방법
 - 연결 후에는 양쪽 다 동일한 방식으로 메시지 송수신한다.
 
+**통신 흐름**
+```mermaid
+sequenceDiagram
+    participant S as Server
+    participant C as Client
+    
+    S->>S: ServerSocket(8080) 포트 열고 대기
+    C->>S: Socket으로 접속 요청
+    S->>S: accept()로 연결 수락
+    
+    Note over S,C: 연결 성립 - 양방향 통신 시작
+
+    S->>C: 메시지 송신 (메인 스레드)
+    C->>S: 메시지 송신 (메인 스레드)
+    S->>C: 메시지 송신 (메인 스레드)
+
+    Note over S,C: /quit 입력 시
+
+    S->>S: socket.close()
+    S->>S: serverSocket.close()
+    C->>C: socket.close()
+```
+
 **스트림 구조**
 | 방향 | 클래스 | 역할 |
 |---|---|---|
