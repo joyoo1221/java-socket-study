@@ -60,11 +60,8 @@ Content-Length: 22                 ← 헤더 (본문 크기)
 #### 4.2. 그 외 경로 접속
 ![그 외](/02-http-server/images/etc.png)
 
-### 5. 어떤 문제를 만났고 어떻게 해결했는가?
-
-
-### 6. 배운 점
-- HTTP도 결국 TCP Socket 위에서 동작한다
-- HTTP 응답은 상태 라인 + 헤더 + 빈 줄 + 본문 구조로 이루어져 있다
-- 01-tcp-chat은 연결을 유지하지만, HTTP는 요청-응답 후 연결을 끊는다
-- ServerSocket은 while(true)로 계속 요청을 받기 때문에 close하지 않는다
+### 5. 배운 점
+- HTTP도 결국 TCP Socket 위에서 동작한다.
+- HTTP 응답은 상태 라인 + 헤더 + 빈 줄 + 본문 구조로 이루어져 있다.
+- 01-tcp-chat은 연결을 유지하지만, HTTP는 요청-응답 후 연결을 끊는다.
+- ServerSocket은 while(true)로 계속 요청을 받기 때문에 close하지 않는다.

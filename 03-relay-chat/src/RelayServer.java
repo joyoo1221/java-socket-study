@@ -1,5 +1,3 @@
-package src;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -78,7 +76,7 @@ public class RelayServer {
     }
 
     /**
-     * broadcast 메서도 - 보낸 사람을 제외한 모든 클라이언트에게 메시지 전달
+     * broadcast 메서드 - 보낸 사람을 제외한 모든 클라이언트에게(=리스트에 있는 클라이언트 전부에게) 메시지 전달
      * 01에서는 이 개념이 없었다 (상내가 1명 뿐이기 때문)
      * 카톡 단체방에서 한 명이 메시지 치면 나머지 전원에게 전송되는 것과 같다
      */

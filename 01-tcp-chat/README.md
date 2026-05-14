@@ -44,12 +44,14 @@ sequenceDiagram
 ```
 
 **스트림 구조**
+
 | 방향 | 클래스 | 역할 |
 |---|---|---|
 | 수신 | InputStream → InputStreamReader → BufferedReader | 바이트를 문자로 변환하고, 한 줄 단위로 읽기 이해 순서대로 감싸는 구조 |
 | 송신 | OutputStream → PrintWriter(autoFlush) | 문자열을 바이트로 변환하여 즉시 전송 |
 
 **스레드 분리**
+
 | 스레드 | 담당 | 이유 |
 |---|---|---|
 | 메인 스레드 | 송신(키보드 입력 → 상대방에게 전송) | 사용자 입력을 대기하는 역할 |
